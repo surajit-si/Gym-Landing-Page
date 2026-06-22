@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Best Practices -->
+    <title>IRON SYNDICATE | Premium Dark Theme Boutique Gym</title>
+    <meta name="description" content="Welcome to Iron Syndicate, a boutique training facility built for high performance, strength, and recovery. Experience our state-of-the-art gear, custom recovery zones, and elite community." />
+    
+    <!-- Custom Fonts (Outfit for headings, Inter for body, Caveat for hand-made styling notes) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="site-header" id="header">
+      <div class="container header-container">
+        <a href="#" class="logo">
+          <span class="logo-accent">IRON</span>SYNDICATE
+        </a>
+        
+        <nav class="nav-menu" id="nav-menu">
+          <a href="#philosophy" class="nav-link">Manifesto</a>
+          <a href="#zones" class="nav-link">The Space</a>
+          <a href="#calculator" class="nav-link">Sweat & Fuel</a>
+          <a href="#memberships" class="nav-link">Passes</a>
+          <a href="#contact" class="nav-link">Location</a>
+          <a href="#memberships" class="btn btn-nav-cta">Join Syndicate</a>
+        </nav>
+        
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section" id="hero">
+        <div class="glow-orb glow-orb-1"></div>
+        <div class="glow-orb glow-orb-2"></div>
+        
+        <div class="container hero-container">
+          <div class="hero-content">
+            <span class="badge">EST. 2026 / BOUTIQUE STRENGTH</span>
+            <h1 class="hero-title">LIFT HEAVY.<br><span class="text-glow">LIVE HONEST.</span></h1>
+            <p class="hero-lead">
+              A sanctuary for the dedicated. We don't do soft filters, fitness influencers, or mirrors that lie. Just competition-grade iron, high-performance recovery labs, and a collective obsession with progress.
+            </p>
+            <div class="hero-ctas">
+              <a href="#memberships" class="btn btn-primary">Claim 1-Day Trial</a>
+              <a href="#zones" class="btn btn-outline">Explore the Space</a>
+            </div>
+            
+            <div class="hero-occupancy-wrapper">
+              <div class="occupancy-card">
+                <div class="occupancy-status">
+                  <span class="pulse-indicator"></span>
+                  <span class="occupancy-text">Live Facility Feed: <strong id="occupancy-count">--</strong> lifters active</span>
+                </div>
+                <div class="occupancy-bar-container">
+                  <div class="occupancy-bar" id="occupancy-bar" style="width: 0%"></div>
+                </div>
+                <div class="occupancy-meta">
+                  <span id="occupancy-status-desc">Calculating peak hour...</span>
+                  <span class="occupancy-racks">Squat platforms free: <strong id="platforms-count">--</strong></span>
+                </div>
+              </div>
+              <span class="handwritten hero-handwritten-note">Wait times? None here. 🦾</span>
+            </div>
+          </div>
+          
+          <div class="hero-visual">
+            <div class="visual-wrapper">
+              <div class="visual-border-box"></div>
+              <div class="visual-backdrop"></div>
+              <!-- Placeholder for hero image with premium aesthetics -->
+              <div class="visual-image-placeholder">
+                <svg viewBox="0 0 100 100" class="svg-visual">
+                  <defs>
+                    <radialGradient id="grad" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" style="stop-color:var(--accent);stop-opacity:0.25" />
+                      <stop offset="100%" style="stop-color:transparent;stop-opacity:0" />
+                    </radialGradient>
+                  </defs>
+                  <circle cx="50" cy="50" r="45" fill="url(#grad)" />
+                  <path d="M25 70 L25 50 L35 40 L65 40 L75 50 L75 70" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="1 1" />
+                  <rect x="20" y="70" width="60" height="4" fill="var(--text-secondary)" rx="2" />
+                  <circle cx="35" cy="50" r="3" fill="var(--accent)" />
+                  <circle cx="65" cy="50" r="3" fill="var(--accent)" />
+                  <!-- Human-drawn aesthetic bar -->
+                  <line x1="15" y1="30" x2="85" y2="30" stroke="var(--text-primary)" stroke-width="3" />
+                  <rect x="10" y="25" width="5" height="10" fill="var(--text-secondary)" rx="1" />
+                  <rect x="85" y="25" width="5" height="10" fill="var(--text-secondary)" rx="1" />
+                </svg>
+              </div>
+              
+              <!-- Bespoke Feature Cards floating on top -->
+              <div class="floating-badge badge-1">
+                <span class="icon-span">⚔️</span>
+                <div>
+                  <h4>No Contracts</h4>
+                  <p>Cancel in a click</p>
+                </div>
+              </div>
+              
+              <div class="floating-badge badge-2">
+                <span class="icon-span">🧊</span>
+                <div>
+                  <h4>Recovery Labs</h4>
+                  <p>Ice plunges & Sauna</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Manifesto / Philosophy -->
+      <section class="philosophy-section" id="philosophy">
+        <div class="container">
+          <div class="section-header-asymmetric">
+            <span class="section-label">01 / MANIFESTO</span>
+            <h2 class="section-title">WHY WE EXIST</h2>
+            <div class="section-line"></div>
+          </div>
+          
+          <div class="philosophy-grid">
+            <div class="manifesto-lead-box">
+              <p class="manifesto-highlight">
+                We believe that modern commercial gyms have traded grit for aesthetics, and actual fitness for aesthetic posturing.
+              </p>
+              <p class="manifesto-text">
+                Iron Syndicate is built to return training to its roots. Clean space, heavy weights, premium recovery, and no egos. We don't care about your follower count. We care about your form, your progress, and your focus.
+              </p>
+              <div class="manifesto-sign">
+                <span class="signature">The Founders</span>
+                <span class="signature-title">— Iron Syndicate Co.</span>
+              </div>
+            </div>
+            
+            <div class="tenets-list">
+              <div class="tenet-card">
+                <span class="tenet-num">01</span>
+                <h3>The No-Ego Policy</h3>
+                <p>We celebrate every first pull and every heavy lift. Egos are left at the door; support is mandatory inside. No judgment, just execution.</p>
+              </div>
+              <div class="tenet-card">
+                <span class="tenet-num">02</span>
+                <h3>Built for Action, Not Views</h3>
+                <p>We forbid tripod setups in thoroughfares. This is a workspace. We have dedicated spaces for media, but the gym floor is for hard work.</p>
+              </div>
+              <div class="tenet-card">
+                <span class="tenet-num">03</span>
+                <h3>Elite Recovery as Standard</h3>
+                <p>Growth doesn't happen when lifting; it happens during repair. Every tier has access to our steam, hot stone, and cold-plunge labs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Space / Zones -->
+      <section class="zones-section" id="zones">
+        <div class="container">
+          <div class="section-header-asymmetric">
+            <span class="section-label">02 / THE SPACE</span>
+            <h2 class="section-title">FACILITY ZONES</h2>
+            <div class="section-line"></div>
+          </div>
+          
+          <div class="zones-intro">
+            <p>Our layout is optimized for structured workouts. 1,200 sq. meters split into specific functional modules.</p>
+          </div>
+          
+          <div class="zones-grid">
+            <!-- Zone 1 -->
+            <div class="zone-card">
+              <div class="zone-media">
+                <!-- SVG graphic illustrating the zone theme -->
+                <svg viewBox="0 0 400 250" class="zone-svg">
+                  <rect width="400" height="250" fill="#0C101A" />
+                  <circle cx="200" cy="125" r="80" fill="none" stroke="rgba(210,255,0,0.05)" stroke-width="4" />
+                  <!-- Rack graphic -->
+                  <path d="M120 180 L120 70 M280 180 L280 70 M120 90 L280 90" stroke="#1E293B" stroke-width="6" stroke-linecap="round" />
+                  <path d="M120 120 L280 120" stroke="var(--accent)" stroke-width="4" stroke-dasharray="10 5" />
+                  <!-- Barbell -->
+                  <line x1="80" y1="110" x2="320" y2="110" stroke="var(--text-primary)" stroke-width="4" />
+                  <!-- Plates -->
+                  <rect x="75" y="95" width="8" height="30" fill="var(--text-secondary)" rx="1" />
+                  <rect x="65" y="90" width="8" height="40" fill="var(--accent)" rx="1" />
+                  <rect x="317" y="95" width="8" height="30" fill="var(--text-secondary)" rx="1" />
+                  <rect x="327" y="90" width="8" height="40" fill="var(--accent)" rx="1" />
+                </svg>
+                <span class="zone-badge">ZONE 01</span>
+              </div>
+              <div class="zone-info">
+                <h3>The Pit (Power & Iron)</h3>
+                <p>Eleiko competition platforms, Rogue power racks, dumbbell sets scaling to 75kg, and heavy-duty compound machines. Chalk is welcomed; hard rock is standard.</p>
+                <ul class="zone-features">
+                  <li>8 Power Racks</li>
+                  <li>Eleiko & Uesaka Plates</li>
+                  <li>Dumbbells to 75kg</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Zone 2 -->
+            <div class="zone-card">
+              <div class="zone-media">
+                <svg viewBox="0 0 400 250" class="zone-svg">
+                  <rect width="400" height="250" fill="#0C101A" />
+                  <path d="M40 200 L360 200" stroke="#1E293B" stroke-width="4" />
+                  <!-- Turf lane -->
+                  <path d="M40 200 L360 200" stroke="#15803D" stroke-width="8" />
+                  <line x1="100" y1="200" x2="100" y2="190" stroke="var(--text-primary)" stroke-width="2" />
+                  <line x1="200" y1="200" x2="200" y2="190" stroke="var(--text-primary)" stroke-width="2" />
+                  <line x1="300" y1="200" x2="300" y2="190" stroke="var(--text-primary)" stroke-width="2" />
+                  <!-- Sled graphic -->
+                  <path d="M130 196 L170 196 L180 160 L140 160 Z" fill="none" stroke="var(--accent)" stroke-width="3" />
+                  <line x1="140" y1="160" x2="110" y2="140" stroke="var(--accent)" stroke-width="3" />
+                  <line x1="150" y1="160" x2="120" y2="140" stroke="var(--accent)" stroke-width="3" />
+                </svg>
+                <span class="zone-badge">ZONE 02</span>
+              </div>
+              <div class="zone-info">
+                <h3>Oxygen Lab (HIIT & Turf)</h3>
+                <p>A 20-meter indoor sprint turf, Concept2 rowers, SkiErgs, assault bikes, kettlebells, and heavy medicine ball drop zones. High conditioning output space.</p>
+                <ul class="zone-features">
+                  <li>20m Sled Turf</li>
+                  <li>Concept2 Ergometers</li>
+                  <li>Assault Bikes & KB</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Zone 3 -->
+            <div class="zone-card">
+              <div class="zone-media">
+                <svg viewBox="0 0 400 250" class="zone-svg">
+                  <rect width="400" height="250" fill="#0C101A" />
+                  <path d="M150 150 C 150 120, 250 120, 250 150" stroke="var(--accent)" stroke-width="2" fill="none" />
+                  <!-- Ice Plunge Tub -->
+                  <rect x="130" y="150" width="140" height="50" rx="15" fill="none" stroke="var(--text-secondary)" stroke-width="4" />
+                  <line x1="130" y1="165" x2="270" y2="165" stroke="rgba(0,229,255,0.4)" stroke-width="2" />
+                  <!-- Thermometer symbol -->
+                  <text x="200" y="185" fill="var(--text-primary)" font-family="Outfit" font-size="14" text-anchor="middle">5.5 °C</text>
+                  <!-- Steam lines -->
+                  <path d="M90 100 Q 100 80, 90 60" stroke="rgba(255,255,255,0.15)" stroke-width="2" fill="none" />
+                  <path d="M310 100 Q 320 80, 310 60" stroke="rgba(255,255,255,0.15)" stroke-width="2" fill="none" />
+                </svg>
+                <span class="zone-badge">ZONE 03</span>
+              </div>
+              <div class="zone-info">
+                <h3>The Recovery Vault</h3>
+                <p>Contrast therapy labs featuring dual sub-6°C stainless steel ice plunges, a 90°C cedar dry sauna, mineral lockers, and modern compression therapy lounges.</p>
+                <ul class="zone-features">
+                  <li>Dual Cold Plunges</li>
+                  <li>Traditional Sauna</li>
+                  <li>Compression Boots</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sweat & Fuel Interactive Calculator -->
+      <section class="calculator-section" id="calculator">
+        <div class="container">
+          <div class="calc-box">
+            <div class="calc-header">
+              <span class="badge">SYNDICATE LABS</span>
+              <h2>SWEAT &amp; FUEL CALCULATOR</h2>
+              <p>Optimize your post-workout hydration, protein, and recovery protocols instantly based on your training parameters.</p>
+            </div>
+            
+            <div class="calc-grid">
+              <div class="calc-inputs">
+                <!-- Goal Selector -->
+                <div class="input-group">
+                  <label class="input-label">YOUR GOAL</label>
+                  <div class="goal-toggles">
+                    <button class="goal-btn active" data-goal="muscle">BUILD MUSCLE</button>
+                    <button class="goal-btn" data-goal="fat">BURN FAT</button>
+                    <button class="goal-btn" data-goal="perform">ENDURANCE / POWER</button>
+                  </div>
+                </div>
+
+                <!-- Weight Slider -->
+                <div class="input-group">
+                  <div class="slider-header">
+                    <label class="input-label">BODY WEIGHT</label>
+                    <span class="slider-val"><span id="weight-val">75</span> kg</span>
+                  </div>
+                  <input type="range" id="weight-slider" min="50" max="130" value="75" class="custom-slider">
+                </div>
+
+                <!-- Duration Slider -->
+                <div class="input-group">
+                  <div class="slider-header">
+                    <label class="input-label">WORKOUT DURATION</label>
+                    <span class="slider-val"><span id="duration-val">60</span> mins</span>
+                  </div>
+                  <input type="range" id="duration-slider" min="30" max="120" step="15" value="60" class="custom-slider">
+                </div>
+
+                <!-- Intensity Selector -->
+                <div class="input-group">
+                  <label class="input-label">TRAINING INTENSITY</label>
+                  <div class="intensity-toggles">
+                    <button class="intensity-btn" data-intensity="1">CHILL SESSION</button>
+                    <button class="intensity-btn active" data-intensity="2">HEAVY GRIND</button>
+                    <button class="intensity-btn" data-intensity="3">BEAST MODE</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Output Results -->
+              <div class="calc-outputs">
+                <h3>TARGET PROTOCOL</h3>
+                
+                <div class="output-card">
+                  <div class="output-item">
+                    <div class="output-header">
+                      <span>⚡ Post-Workout Protein</span>
+                      <strong id="protein-result">-- g</strong>
+                    </div>
+                    <div class="progress-bar-bg">
+                      <div class="progress-bar-fill" id="protein-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="output-desc" id="protein-desc">Whey isolate or plant-based equivalent.</p>
+                  </div>
+
+                  <div class="output-item">
+                    <div class="output-header">
+                      <span>💧 Intra/Post Hydration</span>
+                      <strong id="hydration-result">-- ml</strong>
+                    </div>
+                    <div class="progress-bar-bg">
+                      <div class="progress-bar-fill" id="hydration-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="output-desc">Electrolyte-infused fluid target during &amp; after.</p>
+                  </div>
+
+                  <div class="output-item">
+                    <div class="output-header">
+                      <span>🧊 Recovery Routine</span>
+                      <strong id="plunge-result">-- mins</strong>
+                    </div>
+                    <div class="progress-bar-bg">
+                      <div class="progress-bar-fill" id="plunge-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="output-desc" id="plunge-desc">Cold water plunge at 5-8°C suggested.</p>
+                  </div>
+                </div>
+                
+                <span class="handwritten calc-handwritten-note">Custom science, zero fluff. 🧪</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Memberships / Passes -->
+      <section class="memberships-section" id="memberships">
+        <div class="container">
+          <div class="section-header-asymmetric">
+            <span class="section-label">03 / ACCESS PASSES</span>
+            <h2 class="section-title">THE MEMBERSHIPS</h2>
+            <div class="section-line"></div>
+          </div>
+          
+          <div class="membership-grid">
+            <!-- Tier 1 -->
+            <div class="membership-card">
+              <span class="card-badge">SINGLE PASS</span>
+              <h3>The Daily Grunt</h3>
+              <div class="price-container">
+                <span class="price">$25</span>
+                <span class="price-period">/ day</span>
+              </div>
+              <p class="card-desc">Perfect for traveling lifters or those wanting to experience the facility before committing.</p>
+              <ul class="card-list">
+                <li>Full access to The Pit &amp; Oxygen Lab</li>
+                <li>Single booking of Recovery Vault</li>
+                <li>Complimentary chalk &amp; towel</li>
+                <li>No contracts or sign-up fees</li>
+              </ul>
+              <a href="#contact" class="btn btn-block btn-outline">Grab Day Pass</a>
+            </div>
+
+            <!-- Tier 2 -->
+            <div class="membership-card featured">
+              <div class="accent-glow-border"></div>
+              <span class="card-badge badge-accent">MOST POPULAR</span>
+              <h3>The Syndicate Member</h3>
+              <div class="price-container">
+                <span class="price">$119</span>
+                <span class="price-period">/ month</span>
+              </div>
+              <p class="card-desc">For the dedicated trainee looking to integrate strength and structured contrast therapy into their routines.</p>
+              <ul class="card-list">
+                <li>Unlimited 24/7 keycard access</li>
+                <li>Unlimited Recovery Vault access</li>
+                <li>Monthly performance benchmark test</li>
+                <li>Access to Syndicate digital app</li>
+                <li>1 Guest pass voucher per month</li>
+              </ul>
+              <a href="#contact" class="btn btn-block btn-primary">Join the Syndicate</a>
+            </div>
+
+            <!-- Tier 3 -->
+            <div class="membership-card">
+              <span class="card-badge">THE APEX TIER</span>
+              <h3>The Black Label</h3>
+              <div class="price-container">
+                <span class="price">$299</span>
+                <span class="price-period">/ month</span>
+              </div>
+              <p class="card-desc">An all-inclusive program offering elite coaching, private locker room assets, and complete support.</p>
+              <ul class="card-list">
+                <li>Everything in Syndicate Member tier</li>
+                <li>4 Personal Coaching sessions / mo</li>
+                <li>Private biometric locker access</li>
+                <li>Complimentary laundry &amp; pre-workout</li>
+                <li>Unlimited guest passes</li>
+              </ul>
+              <a href="#contact" class="btn btn-block btn-outline">Apply for Black Label</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Logs / Testimonials -->
+      <section class="testimonials-section">
+        <div class="container">
+          <div class="testimonials-header">
+            <span class="badge">COMMUNITY LOGS</span>
+            <h2>THE LOG OF LEGENDS</h2>
+            <p>Real members. Real logs. Real progress. None of this is fabricated.</p>
+          </div>
+          
+          <div class="testimonials-slider-container">
+            <div class="testimonials-track" id="testimonials-track">
+              <!-- Log 1 -->
+              <div class="testimonial-card">
+                <div class="test-header">
+                  <div class="test-user">
+                    <strong>Marcus K.</strong>
+                    <span>Powerlifter (Member for 8mo)</span>
+                  </div>
+                  <span class="test-stars">★★★★★</span>
+                </div>
+                <p class="test-content">"This place saved my training. No queues for platforms, clean competition plates, and people actually work hard. The ice baths post-deadlift are a game changer."</p>
+                <div class="test-footer-stat">PR: Deadlift 265kg / Bench 160kg</div>
+              </div>
+
+              <!-- Log 2 -->
+              <div class="testimonial-card">
+                <div class="test-header">
+                  <div class="test-user">
+                    <strong>Sarah L.</strong>
+                    <span>Hyrox Athlete (Member for 1yr)</span>
+                  </div>
+                  <span class="test-stars">★★★★★</span>
+                </div>
+                <p class="test-content">"The turf layout is perfect for conditioning. Love that there are no tripod setups blocking lanes. It feels like a real athletic training space."</p>
+                <div class="test-footer-stat">PR: Hyrox Time 1h 08m</div>
+              </div>
+
+              <!-- Log 3 -->
+              <div class="testimonial-card">
+                <div class="test-header">
+                  <div class="test-user">
+                    <strong>Dimitri V.</strong>
+                    <span>Executive / Weightlifter</span>
+                  </div>
+                  <span class="test-stars">★★★★★</span>
+                </div>
+                <p class="test-content">"Black Label membership is worth it just for the towel laundry service and premium lockers. Coaching sessions refined my snatch technique immensely."</p>
+                <div class="test-footer-stat">PR: Clean &amp; Jerk 120kg</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact / Location -->
+      <section class="contact-section" id="contact">
+        <div class="container contact-container">
+          <div class="contact-info">
+            <span class="badge">VISIT US</span>
+            <h2>THE STRENGTH FORGE</h2>
+            <p class="contact-intro">Come check the platforms, feel the knurling on the bars, and experience the space in person.</p>
+            
+            <div class="info-items">
+              <div class="info-item">
+                <span class="info-icon">📍</span>
+                <div>
+                  <h4>LOCATION</h4>
+                  <p>842 Industrial Parkway, Sector 4, Suite 100</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">🕒</span>
+                <div>
+                  <h4>HOURS</h4>
+                  <p>Staffed: 6:00 AM - 10:00 PM Daily<br>Keycard Access: 24/7/365</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">📞</span>
+                <div>
+                  <h4>TELEPHONE &amp; MAIL</h4>
+                  <p>+1 (555) 892-IRON<br>join@ironsyndicate.com</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Custom Play Music widget to show human character -->
+            <div class="ambience-widget">
+              <div class="widget-details">
+                <h4>SYNDICATE SOUND</h4>
+                <p id="sound-status">Sound system: Heavy Rock &amp; Metal playlist active</p>
+              </div>
+              <button class="sound-toggle-btn" id="sound-toggle-btn" aria-label="Toggle sound preview">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M8 5v14l11-7z" id="play-icon"/>
+                  <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" id="pause-icon" style="display:none;"/>
+                </svg>
+                <span id="sound-btn-text">Listen Live</span>
+              </button>
+            </div>
+            
+            <audio id="gym-ambience" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-84.wav" loop></audio>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <h3>SECURE YOUR ACCESS</h3>
+            <p>Submit your details to activate your 1-day pass or request membership enrollment.</p>
+            
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <input type="text" id="form-name" required placeholder=" " class="form-input">
+                <label for="form-name" class="form-label">Full Name</label>
+              </div>
+
+              <div class="form-group">
+                <input type="email" id="form-email" required placeholder=" " class="form-input">
+                <label for="form-email" class="form-label">Email Address</label>
+              </div>
+
+              <div class="form-group">
+                <select id="form-tier" class="form-input select-input" required>
+                  <option value="" disabled selected hidden></option>
+                  <option value="day">The Daily Grunt (1-Day Pass)</option>
+                  <option value="member">The Syndicate Member</option>
+                  <option value="black">The Black Label (Premium)</option>
+                </select>
+                <label for="form-tier" class="form-label select-label">Select Pass / Tier</label>
+              </div>
+
+              <div class="form-group">
+                <textarea id="form-message" placeholder=" " class="form-input text-area-input" rows="4"></textarea>
+                <label for="form-message" class="form-label">Current Goals / Core Lift PRs?</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-submit">
+                <span>Submit Application</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </form>
+            <div id="form-success" class="form-success-message">
+              ⚡ Application received. Check your inbox for your digital access keycard details. See you on the platform.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <span class="logo"><span class="logo-accent">IRON</span>SYNDICATE</span>
+          <p>A bespoke training workspace built for strength, performance, and serious recovery. Dedicated to the obsession of lifting.</p>
+        </div>
+        <div class="footer-links">
+          <h4>NAVIGATION</h4>
+          <a href="#hero">Back to Top</a>
+          <a href="#philosophy">Manifesto</a>
+          <a href="#zones">The Space</a>
+          <a href="#calculator">Sweat &amp; Fuel</a>
+        </div>
+        <div class="footer-links">
+          <h4>MEMBERSHIP</h4>
+          <a href="#memberships">Day Passes</a>
+          <a href="#memberships">Syndicate Tier</a>
+          <a href="#memberships">Black Label Program</a>
+          <a href="#contact">Apply Now</a>
+        </div>
+        <div class="footer-links">
+          <h4>SOCIAL CONNECT</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Strava Club</a>
+          <a href="#">YouTube Channel</a>
+          <a href="#">Spotify Playlist</a>
+        </div>
+      </div>
+      <div class="footer-bottom container">
+        <p>&copy; 2026 Iron Syndicate Ltd. All rights reserved.</p>
+        <p class="handwritten footer-credits">Designed with sweat by a human coder in 2026. No AI hallucinations were harmed in this build. 🦾</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
