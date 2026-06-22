@@ -2,7 +2,7 @@
 
 A premium gym and fitness landing page built with modern web technologies, featuring a bold cyber-fitness aesthetic, interactive UI components, membership plans, recovery facilities, and responsive design.
 
-![IRON SYNDICATE Preview](./preview.png)
+![IRON SYNDICATE Preview](https://ironsyndicate-app.netlify.app/)
 
 ## Overview
 
