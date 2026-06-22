@@ -2,8 +2,6 @@
 
 A premium gym and fitness landing page built with modern web technologies, featuring a bold cyber-fitness aesthetic, interactive UI components, membership plans, recovery facilities, and responsive design.
 
-![IRON SYNDICATE Preview](https://ironsyndicate-app.netlify.app/)
-
 ## Overview
 
 IRON SYNDICATE is a modern boutique strength-training gym landing page designed to showcase a premium fitness brand. The project focuses on clean visual hierarchy, smooth user interactions, and conversion-oriented sections such as memberships, facility highlights, testimonials, and contact forms.
